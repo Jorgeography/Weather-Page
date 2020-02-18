@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Weather Journal</title>
+  <!-- Load Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Ranga:400,700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet" />
+  <!-- Load Styles -->
+  <link rel="stylesheet" href="style.css"/>
+</head>
+
+
+
+<body>
+  <img id="unknown" src="/icons/unknown.png" alt="" />
+  <a id="showImage"></a> 
+  
+  <div id="app">
+    <div class="holder headline">
+      <div class= "headline">Weather Journal App</div>
+      <div class="weather-icon"></div>
+      <div class="holder zip">
+        <label for="zip">Where are you?</label>
+        <input type="text" id="zip" placeholder="enter zip code here" />
+      </div>
+      <div class="holder feel">
+        <label for="feelings">How are you feeling today?</label>
+        <textarea class="myInput" id="feelings" placeholder="Enter your feelings here" rows="9" cols="50"></textarea>
+        <button id="generate" type="submit">Generate</button>
+      </div>
+      <div class="holder entry">
+        <div class="title">Most Recent Entry</div>
+        <div id="entryHolder">
+          <div id="date"></div>
+          <div id="temp"></div>
+          <div id="content"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="notification"></div>
+      <div class="weather-container"></div>
+      <div class="temperature-value">
+        <p>- °<span>C</span></p>
+      </div>
+      <div class="temperature-description">
+        <p>-</p>
+      </div>
+      <div class="location">
+        <p>-</p>
+      </div>
+    </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>

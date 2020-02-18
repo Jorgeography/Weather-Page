@@ -1,0 +1,161 @@
+html {
+    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+}
+
+body{
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+#app{
+    display: grid;
+    grid-auto-rows: minmax(150px, auto);
+    /* grid-template-columns:  */
+    height:100vh;
+    color: black;
+    opacity: 85%;
+    justify-content: center;
+    grid-gap: 1em;
+    font-size: 20px;
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+
+.headline {
+    font-size: 28px;
+}
+
+.title {
+    margin: 18px;
+    font-size: 20px;
+}
+
+#zip {
+    margin: 10px;
+}
+
+#feelings {
+    margin: 10px;
+}
+
+#unknown { 
+    visibility: hidden; 
+}
+
+.weather-container{
+width: 300px;
+height: 260px;
+}
+
+.location {
+    visibility: hidden;
+}
+
+.temperature-description {
+    visibility: hidden;
+}
+
+.temperature-value p {
+    visibility: hidden;
+}
+
+.weather-icon{
+    width: 100px;
+    margin:0;
+
+}
+
+.weather-icon img{
+    margin: 0 auto;
+}
+
+.holder{
+width: 600px;
+}
+
+.entry{
+    background:#B6CCB9;
+    font-size: 20px;
+}
+
+div#date {
+    margin:20px;
+}
+
+div#temp {
+    position: relative;
+    left: 20px;
+}
+
+div#content {
+    margin:20px;
+}
+
+
+/*  Basic Styling To Override Default For Basic HTML Elements */
+label{
+    display:block;
+    font-size: 27px;
+    margin: 10px;
+}
+
+input{
+    display:block;
+    height: 60px;
+    width: 320px;
+    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 70%);
+    color: black;
+    font-size: 20px;
+    font-family: 'Julius Sans One', sans-serif;
+    border: none;
+}
+
+button{
+    width: 200px;
+    height:75px;
+    background: #e3ffe7;
+    box-shadow:  7px -7px 19px #bad1bd, 
+                 -7px 7px 19px #ffffff;
+    color: grey;
+    font-size: 26px;
+    font-family: 'Julius Sans One', sans-serif;
+    border: none;
+    border-radius: 24px;
+
+}
+h1{
+    font-size: 36px;
+}
+
+textarea{
+    background:linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 70%);
+    border: none;
+    color: black;
+    font-size: 20px;
+    font-family: 'Julius Sans One', sans-serif;
+}
+/* Reset style for HTML element on active to have no border*/
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+/* Style for Placeholder Text*/
+::placeholder { /* Firefox, Chrome, Opera */ 
+    color: black; 
+    opacity: 40%;
+    font-family: 'Julius Sans One', sans-serif;
+
+} 
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */ 
+    color: #f0d43a; 
+    font-family: 'Julius Sans One', sans-serif;
+
+} 
+  
+::-ms-input-placeholder { /* Microsoft Edge */ 
+    color: #f0d43a; 
+    font-family: 'Julius Sans One', sans-serif;
+
+} 
